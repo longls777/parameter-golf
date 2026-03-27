@@ -1,8 +1,8 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 
 set -euo pipefail
 
-repo_root=${0:A:h}
+repo_root="$(cd "$(dirname "$0")" && pwd)"
 cd "$repo_root"
 
 mkdir -p logs
